@@ -1,0 +1,23 @@
+<header class="container"  xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security" th:fragment="header">
+    <span class="logo">Solo Tune</span>
+    <nav>
+        <a href="/homePage">Главная</a>
+        <a href="/price">Цены и Тарифы</a>
+        <a href="/about-us">О Solo Tune</a>
+
+        <span sec:authorize="!isAuthenticated()">
+        <a href="/reg">Зарегистрироваться</a>
+        <a href="/login">Войти</a>
+        </span>
+
+        <span sec:authorize="isAuthenticated()">
+        <a href="/user">Кабинет Пользователя</a>
+        </span>
+
+        <span sec:authorize="hasAuthority('ADMIN')">
+         <a href="/panelAdmin">Панель Администратора</a>
+        </span>
+
+    </nav>
+</header>

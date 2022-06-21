@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель Администратора</title>
+    <link rel="stylesheet" th:href="@{/main.css}"/>
+</head>
+<body>
+<div th:replace="layouts/header :: header"></div>
+
+<main class="container">
+    <a th:href="'/item/add'" class="edit-btn" sec:authorize="hasAuthority('ADMIN')">Добавить Товар</a>
+</main>
+<div th:replace="layouts/footer :: footer"></div>
+</body>
+</html>

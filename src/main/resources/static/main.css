@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat:wght@300&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    width: 100%;
+
+}
+
+body
+{
+    background: #f48fb1;
+}
+
+.logo
+{
+    font-family: 'Fascinate Inline', cursive;
+    color: #c3fdff;
+    font-size: 60px;
+}
+
+a
+{
+    text-decoration: none;
+    color: forestgreen;
+    transition: color 500ms ease;
+}
+a:hover
+{
+    color: crimson;
+}
+
+.container
+{
+    width:  1300px;
+    margin: 0 auto;
+
+}
+
+header.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 15px;
+}
+
+header nav a
+{
+    margin-left: 15px;
+}
+div.about
+{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid sienna;
+    border-bottom-width: 2px;
+    background: sienna;
+    line-height: 150%;
+}
+.presentation
+{
+    float: left;
+    width: 100%;
+    background: cyan;
+    padding: 50px 200px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+.presentation h2
+{
+    color:black;
+    font-size: 30px;
+    padding-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentation p
+{
+    color: black;
+    font-size: 20px;
+    padding-top: 7px;
+    max-width: 380px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentation img
+{
+    float: right;
+    width: 350px;
+    border-radius: 250%;
+    position: relative;
+    top: 50px;
+}
+
+.priceItems
+{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.priceItems>div
+{
+    width: 30%;
+    margin-bottom: 30px;
+    background: 30px;
+    box-sizing: border-box;
+}
+.priceItems>div h3
+{
+    color: white;
+    margin: 7px 0;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.priceItems>div p
+{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.priceItems>div span
+{
+    background: gold;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+form input,form textarea
+{
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-top: 20px;
+    resize: none;
+}
+
+form button , .edit-btn
+{
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background: red;
+    transition: background 500ms ease;
+}
+
+form button:hover
+{
+    background: silver;
+}
+
+
+footer
+{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
